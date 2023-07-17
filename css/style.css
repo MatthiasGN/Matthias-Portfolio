@@ -1,0 +1,232 @@
+/* Font selection */
+
+html, body {
+    font-family: 'Lato', 'Verdana', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+}
+
+
+h1 {
+    font-size: 54px;
+    margin-top: 5px;
+}
+
+h3 {
+    text-align: left;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 100px;
+}
+
+h4, p {
+    text-align: left;
+}
+
+.greeting {
+    color: #FFFFFF;
+    box-sizing: content-box;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+
+/* Colour scheme */
+
+.colours {
+    color: #161927;
+    color: #1D2135;
+    color: #0E101B;
+
+    color: #222831;
+
+
+    color: #576EE0;
+    color: #50d890;
+    color: #ed8240;
+
+}
+
+/* General Formatting for Website */
+
+.background-about, .background-experience, .background-contact {
+    background-color: #1D2135;
+}
+
+.background-education, .background-projects {
+    background-color: #161927;
+}
+
+.background-contact {
+    background-size: cover;
+}
+
+.green-text {
+    color: #50d890;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: white;
+}
+
+.container {
+    padding: 60px 140px;
+    max-width: 1000px;
+}
+
+img {
+    border-radius: 1rem;
+    height: 100px;
+    width: 100px;
+}
+
+.img-div {
+    padding: 30px 0px 60px 100px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* About Me */
+#aboutMe {
+    padding: 100px 40px 30px 40px;
+}
+
+#mePic {
+    height: 300px;
+    width: 300px;
+}
+
+#greeting-div {
+    padding-left: 25px;
+    padding-right: 0px;
+}
+
+#name {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: #50d890;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    color: white !important;
+    text-decoration: inherit !important;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.button:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #50d88fe6;
+}
+
+.button_icon{
+    font-size: 20px;
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+#contact-button {
+    margin: 35px;
+}
+
+/* Education */
+
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #1D2135;
+    border-color: #1D2135;
+}
+
+.navbar li {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+.navbar-nav > li > a {
+    font-size: 30px;
+    padding-top: 5px; 
+    padding-bottom: 5px;
+}
+
+#navbar-container {
+    margin: auto;
+    width: fit-content;
+    height: 50px;
+    padding: 5px;
+}
+
+#navbar-ul {
+    max-height: 50px;
+}
+
+/* typed.js Cursor */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* CSS code for smaller screens (ie. phone) */
+@media (max-width: 767px) {
+    .container {
+        padding: 60px 20px;
+    }
+
+    #aboutMe {
+        padding: 60px 20px;
+    }
+}
+
+/* Overriding bootstrap width */
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        padding: 60px 140px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+        padding: 60px 140px;
+    }
+}
