@@ -1,4 +1,5 @@
-// Typed
+
+// Typing greeting
 
 $(function(){
     $('.greeting').typed({
