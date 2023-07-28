@@ -1,0 +1,264 @@
+<!-- 
+Plan.
+
+- Navbar with 5 elements for each section: About me (resume link), education, experience, projects, contact me.
+Base the layout off of your resume.
+- A photo/element for each section. Alternate left/right side and see how it looks.
+Some ideas: Garden pfp, github pfp, arizona hiking pic, project gifs, etc.
+
+- Do one for each section. Education, experience, etc. Symbol for USYD, symbol for projects,
+Toshiba logo, etc.
+
+- Separate idea: instead of just doing the exact same layout as your resume,
+which is kinda pointless, focus the website around your projects.
+Make them interactive in some way or show gifs.
+Work on artificial intelligence.
+
+- Other option is just to follow the same layout/info as your resume but
+put projects first so you can show them off.
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthias Giannesini">
+    <meta name="keywords" content="Matthias Giannesini, USYD, computer science, software, finance, developer, intern, internship, artificial intelligence, AI, machine learning, advanced computing, commerce">
+    <meta name="description" content="Penultimate year Computer Science & Finance student at the University of Sydney with a passion for artificial intelligence. Currently seeking a software/finance internship for Summer 2024.">
+    <title>Matthias Giannesini</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Roboto Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- my CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!-- ~~~~~Replace these~~~~~~~~~~~~~ - Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Typing text -->
+    <script src="js/typed.js"></script>
+    <!-- Smooth scrolling from navbar -->
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/index.js"></script>
+</head>
+  
+<body>
+    <div>
+        <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-menu">
+                <!-- Collection of nav links and other content for toggling -->
+                <ul id="navbar-ul" class="nav navbar-nav">
+
+                    <li>
+                        <a href="#aboutMe">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience">
+                            <span class="glyphicon glyphicon-briefcase"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education">
+                            <span class="glyphicon glyphicon-education"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="glyphicon glyphicon-send"></span>
+                        </a>
+                    </li>
+            </div>
+        </nav>
+    </div>
+
+    <div class="about">
+        <div class="container" id="aboutMe">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="img/pfp-garden-square.jpg" id="mePic" class="img-responsive center-block">
+                </div>
+                <div id="greeting-div" class="col-md-7">
+                    <h1> <span class="greeting"></span> </h1>
+                    <h2 id="name">My name is <span class="green-text">Matthias.</span></h2>
+                    <h4>I'm studying Computer Science & Finance in my penultimate year at the University of Sydney.
+                        I build <span class="green-text">artificial intelligence</span> using Python.
+                    </h4>
+                </div>
+                <a id="contact-button" class="button" href="mailto:matthias.gn@outlook.com" >
+                    Contact Me <i class="uil uil-envelope-check button_icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="container" id="projects">
+            <h2>Projects</h2>
+            <!-- <div class="row row-projects">
+                <h4 class="project-subtitle">Business Process Automation Rules Engine<br>
+                <span class="subtitle">Cyber Ray</span></h4>
+                
+            </div>
+            <div class="row row-projects">
+                <div class="col-md-9">
+                    <p>Developed an engine in C# to monitor social media accounts from Twitter, Instagram, Reddit and GitHub for specific post content, location and date/time. </p>
+                    <p>Configured the engine to automatically send emails and make HTTP requests via REST APIs.</p>
+                </div>
+            </div> -->
+            <div class="projects-container">
+                <!-- Cyber Ray Rules Engine -->
+                <div class="projects-content">
+                    <div>
+                        <i class="uil uil-web-grid projects-icon"></i>
+                        <h3 class="projects_title">LikeIt<br>Full Stack Web Application</h3>
+                    </div>
+                    <img class="img-subtitle" src="https://readme-typing-svg.demolab.com/?lines=Tools;&amp;size=20&amp;font=Fira%20Code&amp;width=150&amp;color=50d890&amp;duration=1000&amp;pause=3000">
+                    <p>
+                    <img class="shields-icon" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&amp;logo=react&amp;logoColor=61DAFB"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&amp;logo=redux&amp;logoColor=white">
+                    <img class="shields-icon" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&amp;logo=node.js&amp;logoColor=white">
+                    <img class="shields-icon" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
+                    </p>
+                    <img class="img-subtitle" src="https://readme-typing-svg.demolab.com/?lines=Languages;&amp;size=20&amp;font=Fira%20Code&amp;width=150&amp;color=50d890&amp;duration=1000&amp;pause=3000">
+                    <p>
+                    <img class="shields-icon" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&amp;logo=html5&amp;logoColor=whit">
+                    <img class="shields-icon" src="https://img.shields.io/badge/CSS-239120?&amp;style=for-the-badge&amp;logo=css3&amp;logoColor=white">
+                    </p>
+                    <br>
+                    <span class="button projects-button">
+                        More info
+                        <i class="uil uil-folder-open button_icon"></i>
+                    </span>
+                </div>
+
+                <!-- BlueSky iOS App -->
+                <div class="projects-content">
+                    <div>
+                        <i class="uil uil-web-grid projects-icon"></i>
+                        <h3 class="projects_title">LikeIt<br>Full Stack Web Application</h3>
+                    </div>
+                    <img class="img-subtitle" src="https://readme-typing-svg.demolab.com/?lines=Tools;&amp;size=20&amp;font=Fira%20Code&amp;width=150&amp;color=50d890&amp;duration=1000&amp;pause=3000">
+                    <p>
+                    <img class="shields-icon" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&amp;logo=react&amp;logoColor=61DAFB"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&amp;logo=redux&amp;logoColor=white">
+                    <img class="shields-icon" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&amp;logo=node.js&amp;logoColor=white">
+                    <img class="shields-icon" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
+                    </p>
+                    <img class="img-subtitle" src="https://readme-typing-svg.demolab.com/?lines=Languages;&amp;size=20&amp;font=Fira%20Code&amp;width=150&amp;color=50d890&amp;duration=1000&amp;pause=3000">
+                    <p>
+                    <img class="shields-icon" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&amp;logo=html5&amp;logoColor=whit">
+                    <img class="shields-icon" src="https://img.shields.io/badge/CSS-239120?&amp;style=for-the-badge&amp;logo=css3&amp;logoColor=white">
+                    </p>
+                    <br>
+                    <span class="button projects-button">
+                        More info
+                        <i class="uil uil-folder-open button_icon"></i>
+                    </span>
+                </div>
+
+                <!-- Sakkara Macro -->
+                <div class="projects-content">
+                    <div>
+                        <i class="uil uil-web-grid projects-icon"></i>
+                        <h3 class="projects_title">LikeIt<br>Full Stack Web Application</h3>
+                    </div>
+                    <img class="img-subtitle" src="https://readme-typing-svg.demolab.com/?lines=Tools;&amp;size=20&amp;font=Fira%20Code&amp;width=150&amp;color=50d890&amp;duration=1000&amp;pause=3000">
+                    <p>
+                    <img class="shields-icon" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&amp;logo=react&amp;logoColor=61DAFB"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&amp;logo=redux&amp;logoColor=white">
+                    <img class="shields-icon" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&amp;logo=node.js&amp;logoColor=white">
+                    <img class="shields-icon" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
+                    </p>
+                    <img class="img-subtitle" src="https://readme-typing-svg.demolab.com/?lines=Languages;&amp;size=20&amp;font=Fira%20Code&amp;width=150&amp;color=50d890&amp;duration=1000&amp;pause=3000">
+                    <p>
+                    <img class="shields-icon" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black"> 
+                    <img class="shields-icon" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&amp;logo=html5&amp;logoColor=whit">
+                    <img class="shields-icon" src="https://img.shields.io/badge/CSS-239120?&amp;style=for-the-badge&amp;logo=css3&amp;logoColor=white">
+                    </p>
+                    <br>
+                    <span class="button projects-button">
+                        More info
+                        <i class="uil uil-folder-open button_icon"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="experience">
+        <div class="container" id="experience">
+            <h2>Experience</h2>
+            <div class="row row-experience">
+                <div class="col-md-9">
+                    <br>
+                    <h4 class="">Toshiba<br>
+                    <span class="subtitle">Software Intern</span></h4>
+                    <p>Designed and implemented printing, scanning and document management solutions on Linux platforms. </p>
+                    <p>Improved and developed hundreds of automated software tests using Python & JavaScript</p>
+                </div>
+                <div class="img-div first-img col-md-3">
+                    <img class="img-experience" src="img/toshiba.png">
+                </div>
+            </div>
+            <div class="row row-experience">
+                <div class="col-md-9">
+                    <br>
+                    <h4 class="">Vitalis<br>
+                    <span class="subtitle">Information Technology Intern</span></h4>
+                    <p></p>
+                </div>
+                <div class="img-div first-img col-md-3">
+                    <img class="img-experience" src="img/vitalis.png">
+                </div>
+            </div>
+            <div class="row row-experience">
+                <div class="col-md-9">
+                    <br>
+                    <h4 class="">Rugby Australia<br>
+                    <span class="subtitle">Junior Database Assistant</span></h4>
+                    <p></p>
+                </div>
+                <div class="img-div first-img col-md-3">
+                    <img class="img-experience" src="img/rugbyau.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container" id="contact">
+            <h2>Contact Me</h2>
+            <h2>
+                <a href="mailto:matthias.gn@outlook.com">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/matthias365">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+                <a href="Tel:0478 002 389">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                </a>
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
